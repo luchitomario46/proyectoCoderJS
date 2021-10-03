@@ -2,9 +2,9 @@ let miFormulario = document.getElementById("formulario");
 
 //miFormulario.addEventListener("submit", validarFormulario);
 
-$("div.botonSubmitClean").prepend('<button id="btnSend">Enviar</button>')
+$("div.botonSubmitClean").prepend('<button id="btn1">Enviar</button>')
 
-$("#btnSend").click((e) => {
+$("#btn1").click((e) => {
     alert("Nombre: " + formulario.children[1].value + " " + formulario.children[3].value);
     alert("Pais agregado: " + formulario.children[7].value)
     alert("Capital: " + formulario.children[9].value)
