@@ -5,31 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilos.css">
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
     <title>Inicio - Viajeros</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/proyectoCoderJS/index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Calculadora</a></li>
-                <li><a href="/proyectoCoderJS/html/formulario.html">Formulario</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
             </ul>
         </nav>
     </header>
     <div>
         <h1>Convensor de moneda</h1>
     </div>
+    <div>
+       <center>
+        <h1>Conversor de Divisas</h1>
+        Cantidad: <input type="range" id="cantidad" min="0" max="1000" value="0" onchange="convertir()">
+        <span id="valor">0</span>
+        convertir De:
+        <select id="de" onchange="convertir()">
+            <option value="1">Peso Chileno CLP</option>
+            <option value="2">Dolar US$</option>
+            <option value="3">EURO EUR</option>
+        </select>
+
+        convertir a:
+        <select id="a" onchange="convertir()">
+            <option value= "1">Peso Chileno CLP</option>
+            <option value= "2">Dolar US$</option>
+            <option value= "3">EURO EUR</option>
+        </select>
+        <h2 id="resultado">Resultado : $0.00</h2>
+    </center>
+
+    <script src="/api.js"></script>
+    </div>
     <footer>
-        <ul class="footer__redes">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-        <p id="footer__parrafo">© Copyright todos los derechos reservados 2021</p>
-    </footer>  
+        <div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>   
 </body>
 </html>

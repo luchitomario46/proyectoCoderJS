@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/proyectoCoderJS/css/estilos.css">
-    <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/estilos.css">
     <title>Inicio - Viajeros</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/proyectoCoderJS/index.html">Inicio</a></li>
-                <li><a href="/proyectoCoderJS/html/calculadora.html">Calculadora</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
                 <li><a href="#">Formulario</a></li>
             </ul>
         </nav>
     </header>
     <div>
         <h1>Formulario</h1>
-        <h4>Ayudanos a llenar nuestra Base de Datos con los paises que conoces.</h4>
     </div>
     <div>
-        <form id="formulario" method="GET" action="/proyectoCoderJS/html/formulario.html">
+        <form id="formulario" method="POST" action="/html/formulario.html">
         <p>Nombre</p>    <input  id="nombre" type="text" placeholder="Juan" name="nombre" >
         <p>Apellidos</p>    <input  id="apellidos" type="text" placeholder="Perez Gonzalez" name="apellidos"  size="40">
-        <p>Correo</p>    <input  id="mail" type="email" placeholder="juan@mail.com" name="mail"  size="40">
+        <p>Correo</p><input  id="correo" type="email" placeholder="Juan@mail.com" name="correo" >
         <p>Pais</p>    <input  id="pais" type="text" placeholder="Chile" name="pais">
         <p>Capital</p>    <input  id="capital" type="text" placeholder="Santiago" name="capital" >
         <p>Moneda</p>    <input  id="moneda" type="text" placeholder="Moneda" name="moneda">
         <p>Continente</p>    <input  id="continente" type="text" placeholder="America" name="continente">
             <p><input type="checkbox">Acepto que mi informacion sea guardada y utilizada en el sitio.</p>
             <div class="botonSubmitClean">
-                
+                <input type="submit" value="Enviar">
                 <input type="reset">
             </div>
         </form>
     </div>
     <footer>
-        <ul class="footer__redes">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-        <p id="footer__parrafo">© Copyright todos los derechos reservados 2021</p>
-    </footer> 
-    <script src="/proyectoCoderJS/js/formulario.js"></script>
+        <div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>   
+    <script src="/js/formulario.js"></script>
 </body>
 </html>
